@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  {{cookiecutter.project_name}}:
+    image: {{cookiecutter.project_name_full}}:latest
+    volumes:
+      - ./{{cookiecutter.project_name}}:/opt/project/{{cookiecutter.project_name}}
+      - ./{{cookiecutter.project_name}}.yml:/opt/project/{{cookiecutter.project_name}}.yml
+    ports:
+      - {{cookiecutter.port}}:{{cookiecutter.port}}
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:4.0.4-xenial
+    restart: always
+    environment:
+      - MONGO_INITDB_DATABASE={{cookiecutter.mongo_db_name}}
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      - {{cookiecutter.mongo_port}}:{{cookiecutter.mongo_port}}
+
+volumes:
+  mongo-data:

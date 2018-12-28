@@ -1,0 +1,8 @@
+mongo:
+  host: mongo
+  port: {{cookiecutter.mongo_port}}
+  db: {{cookiecutter.mongo_db_name}}
+
+
+host: {{cookiecutter.host}}
+port: {{cookiecutter.port}}

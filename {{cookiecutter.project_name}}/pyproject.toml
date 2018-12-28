@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "{{cookiecutter.project_name_full}}"
+version = "{{cookiecutter.version}}"
+description = "{{cookiecutter.project_description}}"
+authors = ["{{cookiecutter.project_author}}"]
+
+[tool.poetry.dependencies]
+python = "^3.7.0"
+asyncio = "^3.4"
+aiohttp = "^3.4"
+motor = "^2.0"
+umongo = "^1.0"
+pyyaml = "^3.13"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.4"
+black = {version = "^18.3-alpha.0",allows-prereleases = true}
+mypy = "^0.650.0"
+wemake-python-styleguide = "^0.5.1"
+pytest-mock = "^1.10"
+pytest-asyncio = "^0.9.0"
+pytest-aiohttp = "^0.3.0"
