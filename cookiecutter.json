@@ -1,8 +1,8 @@
 {
-  "full_name": "Egor Molodik",
-  "email": "ave2@me.com",
+  "full_name": "Anonymous",
+  "email": "",
   "project_author": "{{cookiecutter.full_name}} {{cookiecutter.email}}",
-  "github_username": "ave2me",
+  "github_username": "",
   "python_version": "3.7",
   "project_name": "microservice",
   "project_description": "Basic aiohttp microservice.",
