@@ -1,6 +1,6 @@
 FROM python:3.7.1-alpine
 
-RUN mkdir -p /opt/project/auth
+RUN mkdir -p /opt/project/{{cookiecutter.proect_name}}
 RUN pip --no-cache-dir install poetry
 
 COPY ./pyproject.toml /opt/project
