@@ -1,6 +1,6 @@
 FROM python:3.7.1-alpine
 
-RUN mkdir -p /opt/project/{{cookiecutter.proect_name}}
+RUN mkdir -p /opt/project/{{cookiecutter.project_name}}
 RUN pip --no-cache-dir install poetry
 
 COPY ./pyproject.toml /opt/project
@@ -8,8 +8,8 @@ COPY poetry.lock /opt/project
 
 RUN cd /opt/project && poetry install --no-dev
 
-COPY ./{{cookiecutter.proect_name}} /opt/project/{{cookiecutter.proect_name}}
-COPY ./{{cookiecutter.proect_name}}.yml /opt/project/{{cookiecutter.proect_name}}.yml
+COPY ./{{cookiecutter.project_name}} /opt/project/{{cookiecutter.project_name}}
+COPY ./{{cookiecutter.project_name}}.yml /opt/project/{{cookiecutter.project_name}}.yml
 
 WORKDIR /opt/project
 
