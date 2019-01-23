@@ -2,7 +2,7 @@ version: '3'
 
 services:
   {{cookiecutter.project_name}}:
-    image: {{cookiecutter.project_name_full}}:latest
+    image: {{cookiecutter.project_name}}:latest
     volumes:
       - ./{{cookiecutter.project_name}}:/opt/project/{{cookiecutter.project_name}}
       - ./{{cookiecutter.project_name}}.yml:/opt/project/{{cookiecutter.project_name}}.yml

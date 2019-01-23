@@ -5,7 +5,6 @@
   "github_username": "ave2me",
   "python_version": "3.7",
   "project_name": "microservice",
-  "project_name_full": "tyb-{{cookiecutter.project_name}}",
   "project_description": "Basic aiohttp microservice.",
   "version": "0.1.0",
   "mongo_model_name": "{{cookiecutter.project_name.capitalize()}}",
