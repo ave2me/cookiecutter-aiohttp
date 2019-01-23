@@ -8,6 +8,9 @@ COPY poetry.lock /opt/project
 
 RUN cd /opt/project && poetry install --no-dev
 
+COPY ./{{cookiecutter.proect_name}} /opt/project/{{cookiecutter.proect_name}}
+COPY ./{{cookiecutter.proect_name}}.yml /opt/project/{{cookiecutter.proect_name}}.yml
+
 WORKDIR /opt/project
 
 ENTRYPOINT poetry run python -m aiohttp.web {{cookiecutter.project_name}}.main:main
