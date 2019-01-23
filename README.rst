@@ -17,3 +17,9 @@ Overview
 * wemake-python-styleguide_ and mypy_ are available out-of-the-box and their usage is strongly recommended
 * Basic Dockerfile and docker-compose
 * MongoDB 4.0 as a default DB
+
+
+.. _cookiecutter: https://github.com/audreyr/cookiecutter
+.. _black: https://github.com/ambv/black
+.. _wemake-python-styleguide: https://github.com/wemake-services/wemake-python-styleguide
+.. _mypy: https://github.com/python/mypy/
